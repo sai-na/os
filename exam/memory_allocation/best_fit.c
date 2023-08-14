@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void main() {
+void main()
+{
     int fragment[20], b[20], p[20], nb, np, temp, lowest = 999, i, j;
     static int barray[20], parray[20];
 
@@ -18,12 +19,17 @@ void main() {
     for (i = 1; i < np; i++)
         scanf("%d", &p[i]);
 
-    for (i = 1; i < np; i++) {
-        for (j = 1; j < nb; j++) {
-            if (barray[i] != 1) {
+    for (i = 1; i < np; i++)
+    {
+        for (j = 1; j < nb; j++)
+        {
+            if (barray[i] != 1)
+            {
                 temp = b[j] - p[j];
-                if (temp >= 0) {
-                    if (lowest > temp) {
+                if (temp >= 0)
+                {
+                    if (lowest > temp)
+                    {
                         parray[i] = j;
                         lowest = temp;
                     }
